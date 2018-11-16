@@ -9,7 +9,7 @@ import (
   ...
 )
 
-func foo(r *http.Req) error {
+func foo(r *http.Request) error {
   tr, err := reqmarshal.TransformRequest(r)
   if err != nil {
     return err
